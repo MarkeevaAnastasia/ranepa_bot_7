@@ -17,7 +17,7 @@ from config import TOKEN
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
-#асинхронный вызов функции  
+#асинхронный вызов функции  - конкурентный вызов
 async def start():
     await dp.start_polling (bot)
 
