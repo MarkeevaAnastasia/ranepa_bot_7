@@ -18,7 +18,6 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 #асинхронный вызов функции  
-
 async def start():
     await dp.start_polling (bot)
 
