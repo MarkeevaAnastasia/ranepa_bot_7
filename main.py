@@ -13,6 +13,7 @@ import asyncio # библиотека для асинхронного прогр
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 from config import TOKEN
+from handlers import *
 
 #создание экземпляров классов Bot и Dispatcher
 bot = Bot(token=TOKEN)
