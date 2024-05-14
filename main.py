@@ -14,8 +14,6 @@ from aiogram import Bot, Dispatcher, types
 from config import TOKEN
 from handlers import register_message_handler
 
-
-
 #асинхронный вызов функции - конкурентный вызов с ожиданием события для продолжения процесса выполнения 
 
 @dp.message(Command('start'))
@@ -27,7 +25,6 @@ async def process_start_message(message:types. Message):
 async def echo(message: types.Message):
     """Эхо-ответ"""
     await message.answer(message.text)
-
 
 async def main():
     #создание экземпляров классов Bot и Dispatcher
