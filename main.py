@@ -14,9 +14,7 @@ from aiogram import Bot, Dispatcher, types
 from config import TOKEN
 from handlers import register_message_handler
 
-#создание экземпляров классов Bot и Dispatcher
-bot = Bot(token=TOKEN)
-dp = Dispatcher()
+
 
 #асинхронный вызов функции - конкурентный вызов с ожиданием события для продолжения процесса выполнения 
 
@@ -31,7 +29,14 @@ async def echo(message: types.Message):
     await message.answer(message.text)
 
 
-async def start():
+async def main():
+    #создание экземпляров классов Bot и Dispatcher
+    bot = Bot(token=TOKEN)
+    dp = Dispatcher()
+
+    #функция для вызова хендлеров из пакета handles
+    register_message_handler(dp)
+    
     await dp.start_polling (bot)
 
 if __name__ == "__main__":
