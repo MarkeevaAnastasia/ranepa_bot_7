@@ -3,7 +3,8 @@
 #import os
 #from dotenv import load_dotenv
 
-#TOKEN = "<ВАШ_ТОКЕН>"
+# закинуть в .env
+#TOKEN=<ВАШ_ТОКЕН>
 
 #load_dotenv()
 #TOKEN: str = os.getenv("TOKEN")
