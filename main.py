@@ -9,6 +9,7 @@
 # pip freeze > requirements.txt — сохранить внешние пакеты в файл
 # pip install -r requirements.txt —  загрузить пакеты из файла
 
+import logging #библиотека логирования (журналирования)
 import asyncio # библиотека для асинхронного программирования
 from aiogram import Bot, Dispatcher, types
 from config import TOKEN
@@ -27,6 +28,11 @@ async def echo(message: types.Message):
     await message.answer(message.text)
 
 async def main():
+    """Настройки перед запуском бота"""
+
+    #уровень логирования
+    logging.basicConfig(level=logging.DEBUG)
+    
     #создание экземпляров классов Bot и Dispatcher
     bot = Bot(token=TOKEN)
     dp = Dispatcher()
@@ -37,7 +43,12 @@ async def main():
     await dp.start_polling (bot)
 
 if __name__ == "__main__":
-    asyncio.run(start())
+    #обработка исключений try-except
+    try:
+        asyncio.run(start())
+    except (KeyboardInterrupt, SystemExit):
+        logging.info("Пока!")
+    
 
 
 
