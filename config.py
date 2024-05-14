@@ -1,12 +1,15 @@
-TOKEN = 6464963614:AAEv39brpqmsfqTaCShxnzgRhawxQEmAHV0
+
+# включить если хотите на сервере запустить / в среде разработке
+#import os
+#from dotenv import load_dotenv
+
+#TOKEN = "<ВАШ_ТОКЕН>"
+
+#load_dotenv()
+#TOKEN: str = os.getenv("TOKEN")
+
+# включить если хотите проверить бота в реплите
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
-TOKEN: str = os.getenv("TOKEN")
-
-
-
-
-
+TOKEN = os.environ['TOKEN']
 
