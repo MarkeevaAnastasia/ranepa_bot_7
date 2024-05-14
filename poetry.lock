@@ -203,6 +203,16 @@ files = [
 ]
 
 [[package]]
+name = "django-handler"
+version = "1.0"
+description = "A simple Django app to write logs into databases."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-handler-1.0.tar.gz", hash = "sha256:de4982466173067fa77b98e286b8cf279c646e386e5bf28976ade141b4ad3aaa"},
+]
+
+[[package]]
 name = "frozenlist"
 version = "1.4.1"
 description = "A list-like structure which implements collections.abc.MutableSequence"
@@ -653,4 +663,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c16ecd122f62fed1625129e6b94d77a4707a099ffa17fa078665ceac47b683a7"
+content-hash = "7fa6c2e76a1f0ea226fd11de605ee0e02818dab5a44a9c2e4abb89db0097f987"

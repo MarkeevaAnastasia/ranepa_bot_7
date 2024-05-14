@@ -10,6 +10,7 @@ packages = [{include = "repl_nix_ranepabot7"}]
 python = "^3.10"
 aiogram = "^3.6.0"
 python-dotenv = "^1.0.1"
+django-handler = "^1.0"
 
 
 [build-system]
