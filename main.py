@@ -11,9 +11,8 @@
 
 import asyncio # библиотека для асинхронного программирования
 from aiogram import Bot, Dispatcher, types
-from aiogram.filters.command import Command
 from config import TOKEN
-from handlers import *
+from handlers import register_message_handler
 
 #создание экземпляров классов Bot и Dispatcher
 bot = Bot(token=TOKEN)
