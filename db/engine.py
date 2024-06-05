@@ -1,8 +1,6 @@
 __all__ = [
   'async_session_maker',
   'async_create_table',
-  'engine',
-  'sessionmaker'
 ]
 
 from sqlalchemy.ext.asyncio import create_async_engine
