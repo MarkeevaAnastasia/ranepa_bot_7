@@ -1,2 +1,2 @@
-from .models import *
+from .models import Base, User
 from .engine import *

@@ -15,6 +15,7 @@ from aiogram import Bot, Dispatcher, types
 from config import TOKEN
 from handlers import register_message_handler
 
+
 #асинхронный вызов функции - конкурентный вызов с ожиданием события для продолжения процесса выполнения 
 
 @dp.message(Command('start'))

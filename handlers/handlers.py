@@ -13,6 +13,7 @@ async def process_start_command(message:types. Message):
     await message.answer('Привет!\nПриятно познакомиться')
   logging.info(f`user{message.from_user.id} starts bot`)
 
+
 #@dp.message()
 async def echo_command(message: types.Message):
     """Эхо-ответ"""
