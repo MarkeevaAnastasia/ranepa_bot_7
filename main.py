@@ -14,6 +14,7 @@ import asyncio # библиотека для асинхронного прогр
 from aiogram import Bot, Dispatcher, types
 from config import TOKEN
 from handlers import register_message_handler
+from handlers import commands_for_bot 
 from db import async_create_table
 
 
@@ -42,6 +43,8 @@ async def main():
     #функция для вызова хендлеров из пакета handles
     register_message_handler(dp)
     
+    #передача списка команд боту
+    await bot.set_my_commands(commands=commands_for_bot)
     await dp.start_polling (bot)
 
 if __name__ == "__main__":
