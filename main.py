@@ -34,7 +34,7 @@ async def main():
     """Настройки перед запуском бота"""
 
     #уровень логирования
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.INFO)
     
     #создание экземпляров классов Bot и Dispatcher
     bot = Bot(token=TOKEN)
